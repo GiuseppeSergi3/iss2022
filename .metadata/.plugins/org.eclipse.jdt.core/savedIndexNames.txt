@@ -32,8 +32,8 @@ INDEX VERSION 1.131+C:\Users\fserg\OneDrive\Desktop\issLab2022\.metadata\.plugin
 2667611933.index
 3332863633.index
 2328269416.index
-561600363.index
 2435205974.index
+561600363.index
 3032800586.index
-1124295326.index
 1920130168.index
+1124295326.index
