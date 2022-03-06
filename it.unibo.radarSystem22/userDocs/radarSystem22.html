@@ -221,23 +221,7 @@ Si desidera costruire un'applicazione software capace di:
 
 <h2>Requirement analysis</h2>
 
-<div class="remark">
-    
-    <ul>
-    <li>Necessario <b>PC</b> per mostrare il radar.
 
-    <li>Necessario <b>Sonar HC-SR04</b> per rilevare la distanza dell'ostacolo.
-
-    <li>Necessario <b>RaspberryPi</b> per connettere il Sonar.
-
-    <li>Necessario <b>Display</b> a forma di Radar (fornito) per mostrare l'ostacolo.
-
-    <li>Necessario <b>Led</b> da accendere se la distanza rilevata dal Sonar è inferiore al valore DLIMIT.
-    </li> 
-
- 
-
-</div>
 
 <h2>Problem analysis</h2>
  
@@ -246,8 +230,24 @@ Si desidera costruire un'applicazione software capace di:
 
 
 <h2>Project</h2> 
+<div class="remark">
+    
+    <ul>
+    <li>Collegamento del sonar e del led al Raspberry Pi
+
+    <li>Modificata la classe RadarUsageMain per implementare la parte Server (comunicazione tra socket)
+
+    <li>Creata classe Client sul Raspberry Pi per implementare la comunicazione della distanza al display a forma di radar (fornito)
+
+
+    <li><b>Esecuzione:</b> Mettere in esecuzione la classe server (RadarUsageMain.java), eseguire sul Raspberry Pi il comando "python distance.py | tee >(java Client) >(python LedControl.py)" per inviare la distanza al radar e accendere/spegnere il led se la distanza è inferiore al valore DLIMIT
  
+    </li> 
+
+ 
+
 </div>
+
 
 <h2>Testing</h2> 
  
