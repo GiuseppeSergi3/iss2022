@@ -235,12 +235,12 @@ Si desidera costruire un'applicazione software capace di:
     <ul>
     <li>Collegamento del sonar e del led al Raspberry Pi
 
-    <li>Modificata la classe RadarUsageMain per implementare la parte Server (comunicazione tra socket)
+    <li>Modificata la classe <a href="https://github.com/GiuseppeSergi3/iss2022/blob/master/it.unibo.radarSystem22/src/it/unibo/radarSystem22/main/RadarUsageMain.java">RadarUsageMain</a> per implementare la parte Server (comunicazione tra socket)
 
     <li>Creata classe Client sul Raspberry Pi per implementare la comunicazione della distanza al display a forma di radar (fornito)
 
 
-    <li><b>Esecuzione:</b> Mettere in esecuzione la classe server (RadarUsageMain.java), eseguire sul Raspberry Pi il comando "python distance.py | tee >(java Client) >(python LedControl.py)" per inviare la distanza al radar e accendere/spegnere il led se la distanza è inferiore al valore DLIMIT
+    <li><b>Esecuzione:</b> Mettere in esecuzione la classe server (RadarUsageMain.java), eseguire sul Raspberry Pi il comando "python <a href="https://github.com/GiuseppeSergi3/iss2022/blob/master/it.unibo.radarSystem22/raspberryFiles/distance.py">distance.py</a> | tee >(java <a href="https://github.com/GiuseppeSergi3/iss2022/blob/master/it.unibo.radarSystem22/raspberryFiles/Client.java">Client</a>) >(python <a href="https://github.com/GiuseppeSergi3/iss2022/blob/master/it.unibo.radarSystem22/raspberryFiles/LedControl.py">LedControl.py</a>)" per inviare la distanza al radar e accendere/spegnere il led se la distanza è inferiore al valore DLIMIT
  
     </li> 
 
