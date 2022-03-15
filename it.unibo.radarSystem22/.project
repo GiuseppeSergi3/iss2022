@@ -2,7 +2,9 @@
 <projectDescription>
 	<name>it.unibo.radarSystem22</name>
 	<comment></comment>
-	<projects/>
+	<projects>
+		<project>it.unibo.radarSystem22.domain</project>
+	</projects>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>

@@ -26,7 +26,7 @@ public class TestLed {
 		System.out.println("testLedMockOn");
 		DomainSystemConfig.simulation = true; 
 		
-		ILed led = new LedMock();
+		ILed led = DeviceFactory.createLed();
 		assertTrue( ! led.getState() );
 		
  		led.turnOn();

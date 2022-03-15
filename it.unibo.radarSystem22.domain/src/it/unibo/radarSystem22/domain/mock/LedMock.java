@@ -1,8 +1,9 @@
 package it.unibo.radarSystem22.domain.mock;
 
 import it.unibo.radarSystem22.domain.interfaces.ILed;
+import it.unibo.radarSystem22.domain.models.LedModel;
 
-public class LedMock implements ILed{  
+public class LedMock extends LedModel implements ILed{  
 	boolean stato;
 
 	@Override
@@ -22,5 +23,11 @@ public class LedMock implements ILed{
 	public boolean getState() {
 		// TODO Auto-generated method stub
 		return stato;
+	}
+
+	@Override
+	protected void ledActivate(boolean val) {
+		// TODO Auto-generated method stub
+		
 	}
 } 

@@ -12,7 +12,7 @@ import radarPojo.radarSupport;
 public class RadarUsageMain {
     public void doJob() {
     		try {
-				ServerSocket sSocket=new ServerSocket(12345);
+				ServerSocket sSocket = new ServerSocket(12345);
 				Socket cSocket = sSocket.accept();
 			
             System.out.println("start");
@@ -35,6 +35,7 @@ public class RadarUsageMain {
 			}
     }
     public static void main(String[] args) {
+    		System.out.println("Inizio main");
             new RadarUsageMain().doJob();
     }
 }
