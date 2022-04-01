@@ -1,0 +1,12 @@
+{
+"DLIMIT"           : "70",
+"RadarGuiRemote"   : "true",
+"tracing"          : "false",
+"testing"          : "false"
+
+"hostAddr"         : "192.168.1.7",
+"raspAddr"         : "192.168.137.150",
+"serverPort"       : "8080",
+"ledPort"          : "8010",
+"sonarPort"        : "8015"
+}

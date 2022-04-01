@@ -1,0 +1,13 @@
+{
+"DLIMIT"           : "70",
+"RadarGuiRemote"   : "true",
+"tracing"          : "true",
+"testing"          : "false",
+
+"hostAddr"         : "localhost",
+"raspAddr"         : "192.168.137.139",
+"serverPort"       : "8080",
+"ledPort"          : "8010",
+"sonarPort"        : "8015",
+"protocolType"      : "udp"
+}
