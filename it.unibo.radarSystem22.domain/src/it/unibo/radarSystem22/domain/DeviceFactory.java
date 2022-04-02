@@ -4,6 +4,7 @@ import it.unibo.radarSystem22.domain.concrete.RadarDisplay;
 import it.unibo.radarSystem22.domain.interfaces.*;
 import it.unibo.radarSystem22.domain.models.LedModel;
 import it.unibo.radarSystem22.domain.models.SonarModel;
+import it.unibo.radarSystem22.domain.models.SonarObservable;
 import it.unibo.radarSystem22.domain.utils.ColorsOut;
 import it.unibo.radarSystem22.domain.utils.DomainSystemConfig;
 //import it.unibo.radarSystem22.domain.concrete.SonarConcreteObservable;
@@ -28,9 +29,12 @@ public class DeviceFactory {
 	public static ISonar createSonar() {
 		//Colors.out("DeviceFactory | createSonar simulated="+RadarSystemConfig.simulation);
 		if( DomainSystemConfig.simulation)  {
-			return SonarModel.createSonarMock();
+			return SonarObservable.createSonarMock();
+			
+			//return SonarModel.createSonarMock();
 		}else { 
-			return SonarModel.createSonarConcrete();
+			//return SonarModel.createSonarConcrete();
+			return SonarObservable.createSonarConcrete();
 		}
 	}
 //	public static ISonarObservable createSonarObservable() {
